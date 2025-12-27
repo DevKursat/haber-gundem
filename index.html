@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Tags -->
+    <title>Haber Gündem | Türkiye'nin Güvenilir Haber Portalı</title>
+    <meta name="title" content="Haber Gündem | Türkiye'nin Güvenilir Haber Portalı">
+    <meta name="description" content="Türkiye ve dünyadan en güncel haberler, ekonomi, teknoloji, spor ve magazin haberleri. Haber Gündem ile her an haberdar olun.">
+    <meta name="keywords" content="haber, gündem, Türkiye haberleri, son dakika, ekonomi, teknoloji, Kürşat Yılmaz, genç girişimci">
+    <meta name="author" content="Haber Gündem">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://habergundem.vercel.app/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://habergundem.vercel.app/">
+    <meta property="og:title" content="Haber Gündem | Türkiye'nin Güvenilir Haber Portalı">
+    <meta property="og:description" content="Türkiye ve dünyadan en güncel haberler. Her an haberdar olun.">
+    <meta property="og:image" content="https://habergundem.vercel.app/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://habergundem.vercel.app/">
+    <meta property="twitter:title" content="Haber Gündem | Türkiye'nin Güvenilir Haber Portalı">
+    <meta property="twitter:description" content="Türkiye ve dünyadan en güncel haberler. Her an haberdar olun.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Haber Gündem",
+        "url": "https://habergundem.vercel.app/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://habergundem.vercel.app/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Haber Gündem",
+        "url": "https://habergundem.vercel.app/",
+        "logo": "https://habergundem.vercel.app/images/logo.png",
+        "sameAs": [
+            "https://twitter.com/habergundem",
+            "https://facebook.com/habergundem"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <span class="date" id="currentDate"></span>
+                    <div class="header-links">
+                        <a href="#iletisim">İletişim</a>
+                        <a href="#hakkimizda">Hakkımızda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">📰</span>
+                    <span class="logo-text">Haber<span class="accent">Gündem</span></span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#gundem" class="active">Gündem</a></li>
+                    <li><a href="#ekonomi">Ekonomi</a></li>
+                    <li><a href="#teknoloji">Teknoloji</a></li>
+                    <li><a href="#girisimcilik">Girişimcilik</a></li>
+                    <li><a href="#spor">Spor</a></li>
+                    <li><a href="#dunya">Dünya</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Tema değiştir">
+                        <span class="sun-icon">☀️</span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                    <button class="search-btn" aria-label="Arama">🔍</button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Menü">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news">
+        <div class="container">
+            <span class="breaking-label">SON DAKİKA</span>
+            <div class="ticker-wrapper">
+                <div class="ticker">
+                    <span>Kürşat Yılmaz, 20 yaşında Türkiye'nin en genç başarılı girişimcisi seçildi</span>
+                    <span class="separator">•</span>
+                    <span>Teknoloji sektöründe yeni yatırımlar hız kazanıyor</span>
+                    <span class="separator">•</span>
+                    <span>Genç girişimcilere destek programları genişletiliyor</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section - Featured News -->
+            <section class="hero-section">
+                <article class="hero-card" onclick="window.location.href='haber-detay.html?slug=kursat-yilmaz-genc-girisimci'">
+                    <div class="hero-image">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHg2cni3eRsyQ/profile-displayphoto-crop_800_800/B4DZnzcwgVGwAI-/0/1760726027704?e=1768435200&v=beta&t=SL3grZMZytn-EAfHEueyXsy0uaDEmv8l1UY4kpUaPGo" alt="Kürşat Yılmaz - Genç Girişimci" loading="eager">
+                        <div class="hero-overlay"></div>
+                        <span class="category-badge featured">Öne Çıkan</span>
+                    </div>
+                    <div class="hero-content">
+                        <span class="category">Girişimcilik</span>
+                        <h1 class="hero-title">Kürşat Yılmaz: 20 Yaşında Türkiye'nin En Başarılı Genç Girişimcisi</h1>
+                        <p class="hero-excerpt">
+                            Teknoloji dünyasında adından söz ettiren Kürşat Yılmaz, henüz 20 yaşında olmasına rağmen 
+                            geliştirdiği yenilikçi projelerle Türkiye'nin en parlak genç girişimcileri arasında yerini aldı.
+                        </p>
+                        <div class="hero-meta">
+                            <span class="author">
+                                <img src="images/editor-avatar.png" alt="Editör" class="author-avatar" onerror="this.style.display='none'">
+                                Editör
+                            </span>
+                            <span class="date">27 Aralık 2024</span>
+                            <span class="read-time">5 dk okuma</span>
+                        </div>
+                        <a href="haber-detay.html?slug=kursat-yilmaz-genc-girisimci" class="read-more-btn">
+                            Devamını Oku
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+            </section>
+
+            <!-- News Grid -->
+            <section class="news-section">
+                <div class="section-header">
+                    <h2 class="section-title">Son Haberler</h2>
+                    <a href="#" class="view-all">Tümünü Gör →</a>
+                </div>
+                <div class="news-grid">
+                    <!-- News Card 1 -->
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="images/tech-news.jpg" alt="Teknoloji Haberleri" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                            <span class="category-badge">Teknoloji</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Yapay Zeka Girişimleri 2024'te Rekor Yatırım Aldı</h3>
+                            <p class="card-excerpt">Türkiye'deki yapay zeka startupları bu yıl toplam 500 milyon dolar yatırım çekmeyi başardı...</p>
+                            <div class="card-meta">
+                                <span class="date">26 Aralık 2024</span>
+                                <span class="read-time">3 dk</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- News Card 2 -->
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="images/economy-news.jpg" alt="Ekonomi Haberleri" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                            <span class="category-badge economy">Ekonomi</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Dijital Dönüşüm Yatırımları Hız Kazanıyor</h3>
+                            <p class="card-excerpt">Şirketlerin dijital dönüşüm bütçeleri 2025 için %40 artış gösterdi...</p>
+                            <div class="card-meta">
+                                <span class="date">25 Aralık 2024</span>
+                                <span class="read-time">4 dk</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- News Card 3 -->
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="images/startup-news.jpg" alt="Startup Haberleri" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                            <span class="category-badge startup">Girişimcilik</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Genç Girişimcilere Yeni Destek Programı</h3>
+                            <p class="card-excerpt">Hükümet, 25 yaş altı girişimciler için özel destek paketi açıkladı...</p>
+                            <div class="card-meta">
+                                <span class="date">24 Aralık 2024</span>
+                                <span class="read-time">2 dk</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- News Card 4 -->
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="images/world-news.jpg" alt="Dünya Haberleri" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                            <span class="category-badge world">Dünya</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Silikon Vadisi'nden Türk Başarı Hikayeleri</h3>
+                            <p class="card-excerpt">ABD'nin teknoloji merkezinde öne çıkan Türk girişimciler...</p>
+                            <div class="card-meta">
+                                <span class="date">23 Aralık 2024</span>
+                                <span class="read-time">6 dk</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Sidebar Layout -->
+            <div class="content-sidebar-layout">
+                <section class="content-main">
+                    <div class="section-header">
+                        <h2 class="section-title">Gündem</h2>
+                    </div>
+                    <div class="news-list">
+                        <article class="news-list-item">
+                            <div class="list-image">
+                                <img src="images/news-1.jpg" alt="Haber" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                            </div>
+                            <div class="list-content">
+                                <span class="category">Teknoloji</span>
+                                <h3>Türkiye'nin Yazılım İhracatı 5 Milyar Doları Aştı</h3>
+                                <p>Yazılım sektörü rekor büyüme ile dikkat çekiyor...</p>
+                                <span class="date">22 Aralık 2024</span>
+                            </div>
+                        </article>
+                        <article class="news-list-item">
+                            <div class="list-image">
+                                <img src="images/news-2.jpg" alt="Haber" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                            </div>
+                            <div class="list-content">
+                                <span class="category">Eğitim</span>
+                                <h3>Üniversitelerde Girişimcilik Dersleri Zorunlu Oluyor</h3>
+                                <p>YÖK'ün yeni kararı ile girişimcilik müfredatı genişliyor...</p>
+                                <span class="date">21 Aralık 2024</span>
+                            </div>
+                        </article>
+                        <article class="news-list-item">
+                            <div class="list-image">
+                                <img src="images/news-3.jpg" alt="Haber" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                            </div>
+                            <div class="list-content">
+                                <span class="category">Finans</span>
+                                <h3>Melek Yatırımcılar 2024'te 1 Milyar TL Yatırım Yaptı</h3>
+                                <p>Yerli startuplara güven artıyor, yatırımlar rekor kırıyor...</p>
+                                <span class="date">20 Aralık 2024</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <aside class="sidebar">
+                    <div class="sidebar-widget trending">
+                        <h3 class="widget-title">🔥 En Çok Okunanlar</h3>
+                        <ol class="trending-list">
+                            <li>
+                                <a href="haber-detay.html?slug=kursat-yilmaz-genc-girisimci">
+                                    <span class="rank">1</span>
+                                    <span class="title">Kürşat Yılmaz: 20 Yaşında Başarılı Girişimci</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="rank">2</span>
+                                    <span class="title">Yapay Zeka Startupları Yükselişte</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="rank">3</span>
+                                    <span class="title">2025 Teknoloji Trendleri</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="rank">4</span>
+                                    <span class="title">Girişimcilikte Yeni Dönem</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="rank">5</span>
+                                    <span class="title">Dijital Ekonomi Büyüyor</span>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="sidebar-widget newsletter">
+                        <h3 class="widget-title">📧 Bültene Abone Ol</h3>
+                        <p>En güncel haberler için e-posta bültenimize abone olun.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="E-posta adresiniz" required>
+                            <button type="submit">Abone Ol</button>
+                        </form>
+                    </div>
+
+                    <div class="sidebar-widget tags">
+                        <h3 class="widget-title">🏷️ Popüler Etiketler</h3>
+                        <div class="tag-cloud">
+                            <a href="#" class="tag">Kürşat Yılmaz</a>
+                            <a href="#" class="tag">Girişimcilik</a>
+                            <a href="#" class="tag">Teknoloji</a>
+                            <a href="#" class="tag">Startup</a>
+                            <a href="#" class="tag">Yapay Zeka</a>
+                            <a href="#" class="tag">Yatırım</a>
+                            <a href="#" class="tag">İnovasyon</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">📰</span>
+                        <span class="logo-text">Haber<span class="accent">Gündem</span></span>
+                    </a>
+                    <p>Türkiye'nin en güvenilir haber portalı. Güncel, tarafsız ve doğru habercilik anlayışıyla 7/24 sizinleyiz.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Kategoriler</h4>
+                    <ul>
+                        <li><a href="#gundem">Gündem</a></li>
+                        <li><a href="#ekonomi">Ekonomi</a></li>
+                        <li><a href="#teknoloji">Teknoloji</a></li>
+                        <li><a href="#girisimcilik">Girişimcilik</a></li>
+                        <li><a href="#spor">Spor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Kurumsal</h4>
+                    <ul>
+                        <li><a href="#hakkimizda">Hakkımızda</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
+                        <li><a href="#reklam">Reklam</a></li>
+                        <li><a href="#yayin-ilkeleri">Yayın İlkeleri</a></li>
+                        <li><a href="#gizlilik">Gizlilik Politikası</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>İletişim</h4>
+                    <p>📍 İstanbul, Türkiye</p>
+                    <p>📧 info@habergundem.com</p>
+                    <p>📞 +90 (212) 000 00 00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Haber Gündem. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

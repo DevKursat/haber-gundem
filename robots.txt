@@ -1,0 +1,34 @@
+# Haber Gündem - Robots.txt
+# https://habergundem.vercel.app/
+
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://habergundem.vercel.app/sitemap.xml
+
+# Crawl-delay for bots
+Crawl-delay: 1
+
+# Allow all search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
