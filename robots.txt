@@ -1,11 +1,11 @@
 # Haber Gündem - Robots.txt
-# https://habergundem.vercel.app/
+# https://haber-gundem.vercel.app/
 
 User-agent: *
 Allow: /
 
 # Sitemap Location
-Sitemap: https://habergundem.vercel.app/sitemap.xml
+Sitemap: https://haber-gundem.vercel.app/sitemap.xml
 
 # Crawl-delay for bots
 Crawl-delay: 1
